@@ -37,3 +37,8 @@
     text-align: center;
     margin: 10px;
 }
+.list-container{
+    width: 10px;
+    height: 100%;
+    margin-left: 10px;
+}
