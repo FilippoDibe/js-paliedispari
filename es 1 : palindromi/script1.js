@@ -1,18 +1,16 @@
 // form con un imput dove inserisci una newItem con un bottone invia
-//  1° funzione (newItem) che fa : 
+//  1° funzione (aggiungiItem) che fa : 
         // -ottiene la parola dall'input
         // -verifica che l'input e vuoto 
         // -inserisce la parola nell'array
         // -verfica se la parola e palindroma
         // pulisce l'input
         // inserisce la parola nell'array
-// 2° funzione (addParola)
-        //  -inserisce la parola nell'array
 // 3° funzione (palindromo)
         // -confronta la parola e la sua conversione
         // true:se è palindromo
         // false:se non lo è
-// 4° funzione (aggiurnaRisultato)
+// 4° funzione (refreshLista)
         // aggiorna il risultato nell html
             // creando dei li da mettere in una lista che gia era nel html
             // e nei li inserire il risultato se e palindormo o no 
