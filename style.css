@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+.es-1{
+    width: 50%;
+    height: 100vh;
+    background-color: blue;
+    
+}
+.es-2{
+    width: 50%;
+    height: 100vh;
+    background-color: red;
+}
+.content-es-1{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 70%;
+    margin: 30px auto;
+    height: 90vh;
+}
+.content-es-2{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 70%;
+    margin: 30px auto;
+    height: 90vh;
+}
