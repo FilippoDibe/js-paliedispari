@@ -33,7 +33,7 @@
     margin: 30px auto;
     height: 90vh;
 }
-.main-es-1{
+.main-es-1, .main-es-2{
     text-align: center;
     margin: 10px;
 }
@@ -41,4 +41,7 @@
     width: 10px;
     height: 100%;
     margin-left: 10px;
+}
+#numeroUtente{
+    width: 150px;
 }
