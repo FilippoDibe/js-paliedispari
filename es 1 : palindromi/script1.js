@@ -86,5 +86,31 @@ function refreshLista() {
 
 // funzione che genera il numero del pc 
 function pcCasuale() {
-    return Math.floor(Math.random() * 5) + 1;
+    let numeroCasuale= Math.floor(Math.random() * 5) + 1;
+    return numeroCasuale;
+}
+
+// funzione gioca
+function gioca (){
+    let selezioneUtente= document.querySelector('input[name="opzioni"]:checked');
+    // prendiamo il valore inseirito dall'utente 
+    let numeroUtente = parseInt(document.getElementById('numeroUtente').value, 10);
+
+    // il numero causle del pc 
+
+    let numeroPcCasuale= pcCasuale();
+
+    // calcolo somma
+    let somma= numeroUtente + numeroPcCasuale;
+
+    // pari o dispari 
+    let risultato = (somma % 2 ===0)?'pari': 'dispari'
+
+    // dichiariamo il vincitore 
+    let finalResult = (risultato===selezioneUtente)? 'hai vinto': 'il computer ha vinto'
+
+    document.getElementById('user-number').textContent = numeroUtente;
+    document.getElementById('pc-number').textContent = numeroPcCasuale;
+    document.getElementById('risultato').textContent = risultato;
+    alert(finalResult);
 }

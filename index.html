@@ -28,15 +28,21 @@
                     <h1>pari o dispari the game</h1>
                     <input type="radio"id="pari" name="opzioni" value="pari">PARI
                     <input type="radio"id="dispari" name="opzioni" value="dispari">DISPARI <br>
-                    <input type="number" id="numero-utente" placeholder="inserisci un numero" min="1" max="5">
+                    <input type="number" id="numeroUtente" placeholder="inserisci un numero" min="1" max="5">
 
-                    <button onclick="">INVIO</button>
+                    <button onclick="gioca()">invio</button>
+                    <br>
+                    <p>il numero che hai inseirto è : <span id="user-number">
+                        
+                    </span></p>
+                    <p>il numero esratto dal pc è: <span id="pc-number">
 
+                    </span></p>
+                    <p>la somma è: <span id="risultato"></span></p>
                 </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="es 1 : palindromi/script1.js"></script>
-    <script type="text/javascript" src="es 2 : paridispari/script.js"></script>
 </body>
 </html>
