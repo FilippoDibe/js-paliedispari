@@ -20,15 +20,15 @@
 
 
 
-var listaParole = [];
+let listaParole = [];
 
 // Riferimento all'elemento UL dove verrà stampata la lista
-var stampaLista = document.getElementById('lista-es-1');
+let stampaLista = document.getElementById('lista-es-1');
 
 // Funzione che viene chiamata al click del bottone "Aggiungi"
 function aggiungiItem() {
     // Ottenimento del valore dell'input
-    var newItem = document.getElementById('text').value;
+    let newItem = document.getElementById('text').value;
     // Verifica se l'input non è vuoto prima di aggiungere l'elemento alla lista
     if (newItem.trim() !== '') {
         // Aggiunta del nuovo elemento all'array
@@ -37,7 +37,7 @@ function aggiungiItem() {
         refreshLista();
         // Pulizia del campo di input
         document.getElementById('text').value = '';
-        var risultato= palindromo(newItem);
+        let risultato= palindromo(newItem);
         refreshLista(risultato);
         
     } else {
@@ -46,22 +46,22 @@ function aggiungiItem() {
     }
 }
 function palindromo(newItem){
-    var parolaInvertita = newItem.split('').reverse().join('');
+    let parolaInvertita = newItem.split('').reverse().join('');
     return newItem===parolaInvertita;
 }
 // Funzione per aggiornare la lista
 function refreshLista() {
-    var listaAggiornata = document.getElementById('lista-es-1');
+    let listaAggiornata = document.getElementById('lista-es-1');
     
     listaAggiornata.innerHTML = '';
 
     // Inizializzazione dell'indice per il ciclo while
-    var i = 0;
+    let i = 0;
 
     // Ciclo while per aggiornare la lista con gli elementi dell'array
     while (i < listaParole.length) {
         // Creazione di un nuovo elemento LI
-        var listItem = document.createElement('li');
+        let listItem = document.createElement('li');
         listItem.textContent = listaParole[i] + ':' + (palindromo(listaParole[i])? 'palindromo': 'non palindromo');
         listaAggiornata.appendChild(listItem);
 
