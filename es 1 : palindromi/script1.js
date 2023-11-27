@@ -40,7 +40,7 @@ function parola(){
 }
 // 2°
 function addParola(newParola){
-   
+   listaParole.push(newParola);
 }
 // 3°
 function palindromo(){
