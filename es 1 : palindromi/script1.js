@@ -104,10 +104,21 @@ function gioca (){
     let somma= numeroUtente + numeroPcCasuale;
 
     // pari o dispari 
-    let risultato = (somma % 2 ===0)?'pari': 'dispari'
+    let risultato;
+    if(somma % 2 ===0){
+        risultato= 'pari'
+     }else{
+        risultato= 'dispari'
+     } 
 
     // dichiariamo il vincitore 
-    let finalResult = (risultato===selezioneUtente)? 'hai vinto': 'il computer ha vinto'
+    let finalResult;
+
+    if (risultato === selezioneUtente.value) {
+        finalResult = 'Hai vinto!';
+    } else {
+        finalResult = 'Il computer ha vinto.';
+    }
 
     document.getElementById('user-number').textContent = numeroUtente;
     document.getElementById('pc-number').textContent = numeroPcCasuale;
